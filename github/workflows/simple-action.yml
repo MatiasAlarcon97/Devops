@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest   # El sistema operativo donde se ejecutará
     steps:
       - name: Checkout del código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Mostrar mensaje
         run: echo "Hola mundo desde GitHub Actions"
