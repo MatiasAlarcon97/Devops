@@ -1,0 +1,16 @@
+name: Ejemplo simple de GitHub Action
+
+on:
+  push:     # El workflow se activa en cada push
+    branches:
+      - main   # Solo cuando el push es al branch main
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest   # El sistema operativo donde se ejecutará
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Mostrar mensaje
+        run: echo "Hola mundo desde GitHub Actions"
